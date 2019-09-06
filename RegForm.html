@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width,
+          user-scalable=no,
+          initial-scale=1.0,
+          maximum-scale=1.0,
+          minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Genesis</title>
+  <link rel="stylesheet" href="./RegForm.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+</head>
+<body class="container">
+  <div class="wrap">
+    <header class="header"></header>
+    <main class="wrapper">
+    <div class="inner">
+      <p class="inner-title">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      </p>
+      <div class="regForm">
+        <form class="formWithValidation" name="form">
+            <p>Я ищу:</p>
+          <div class="regForm-gender">
+            <input type="radio" id="male" class="genderinput" name="gender"/>
+            <label for="male" class="genderlabel"> 
+              <img  src="images/male3.png" class="genderImg" width="19" height="22" alt="male img">
+              1 Вариант
+            </label>
+            <input type="radio" id="female" class="genderinput" name="gender" checked/>
+            <label for="female" class="genderlabel"> 
+              <img src="images/female3.png" class="genderImg" width="19" height="22" alt="female img">
+              2 Вариант
+            </label>
+          </div>
+          <div>
+            <label for="yourName">Ваше имя:</label>
+            <input type="text" id="yourName" name="yourName" class="field">
+          </div>    
+          <div>
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" class="field" name="yourEmail">
+          </div>
+          <div>
+            <label for="password">Придумайте пароль:</label>
+            <input type="password" id="password" class="field" name="yourPassword">
+          </div>
+          <div class="regForm-checkbox">
+              <input type="checkbox" id="checkbox" class="checkbox" name="checkbox" required>
+              <div class="regForm-checkboxText">
+                <label for="checkbox" class="checkboxtext">Регистрируясь, вы подтверждаете, что вам уже исполнилось 18 лет и вы ознакомились с условиями пользования сайтом.</label>
+              </div>
+          </div>
+          <div class="submitbtn">
+            <input type='submit' class='validateBtn' value='продолжить'/>
+          </div>
+        </form>
+      </div>
+    </div>  
+    </main>
+  </div>
+<script type="text/javascript" src="./RegForm.js"></script>
+</body>
+</html>
